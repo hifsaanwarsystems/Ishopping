@@ -1,0 +1,45 @@
+{
+    "validEmail":"h@gmail.com",
+    "validpassword":"123456789HSz1233",
+    "validFirstName":"Hania",
+    "validLastName":"Azhar",
+
+
+    "invalidEmail@gmail.comMissing":"h",
+    "invalidPasswordwithspecialcharater":"12334@",
+    "invalidFirstNamewithNumericValues":"123h",
+    "invalidLastNamewithNumericValues:":"ij12",
+
+
+    "invalidEmailEmpty":"",
+    "invalidPasswordEmpty":"",
+    "invalidFirstNameEmpty":"",
+    "invalidLastNameEmpty":"",
+
+
+    "invalidEmail.comMissing":"h@gmail",
+    "invalidPasswordwithAlphabets":"HSz12",
+    "invalidFirstNamewithspecialcharater":"abhj@",
+    "invalidLastNamewithspecialcharacter":"%abrtt",
+    
+
+    "invalidEmail@Missing":"hgmail.com",
+    "invalidPasswordMissingNumericValues":"addf",
+    "invalidFirstNamewithNumericValue":"Ha12",
+    "invalidLastNamewithNumericValue":"Ab122cd",
+
+
+    "invalidEmail.Missing":"h@gmailcom",
+    "invalidPasswordwithSpecialCharacterandNumericValues":"67%yuy",
+    "invalidFirstNamewithSpecialCharacterandNumeriValue":"123hai^*",
+    "InvalidLastNamewithSpecialCharacterandNumericValues":"123*#@Azh",
+
+
+    "invalidEmailMissingCom":"h@gmail.",
+    "invalidPasswordwithEmoji":":(123334",
+    "invalidFirstNamewithEmoji":":)Hali",
+    "invalidLastNamewithEmoji":"asgh:D"
+
+
+
+}
