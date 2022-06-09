@@ -25,6 +25,6 @@ export class Checkout{
    }
    shippingInfo()
    {
-     cy.get('#F3DC9B3').click()
+    
    }
 }

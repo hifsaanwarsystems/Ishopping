@@ -56,5 +56,15 @@ describe('Ishopping Tests Seller Flow', () => {
     seller.bank(bankDetails.benificiaryname,bankDetails.bankname,bankDetails.branchName,bankDetails.accountNo,bankDetails.IBAN)
    })
   
+   it.only('Seller valid login',function(){
+
+    let seller=new Seller()
+
+    cy.visit('https://ishopdev.ddways.com/lofmarketplace/seller/login/',{failOnStatusCode:false,auth:{username:"developers",password:"xN9PHjF9cM4DRXN2"}})
+    seller.Login(sellerData.validEmail,sellerData.validpassword)
+    
+
+
+})
    
 })

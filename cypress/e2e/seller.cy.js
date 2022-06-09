@@ -71,4 +71,13 @@ export class Seller{
     cy.get('#privacy_policy').check()
     cy.get(':nth-child(5) > .is-button').click({force:true})
   }
+
+  Login(email,password)
+  {
+ 
+      cy.get('#email').click().type(email)
+      cy.get('.grid > .password > .control > #pass').click().type(password)
+      cy.get('.grid > #send2').click({force:true})
+    }
+
 }
