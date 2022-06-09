@@ -78,6 +78,7 @@ export class Seller{
       cy.get('#email').click().type(email)
       cy.get('.grid > .password > .control > #pass').click().type(password)
       cy.get('.grid > #send2').click({force:true})
+      cy.url().should('include','https://ishopdev.ddways.com/lofmarketplace/seller/becomeseller/')
     }
 
 }

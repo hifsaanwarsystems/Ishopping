@@ -25,6 +25,6 @@ export class Checkout{
    }
    shippingInfo()
    {
-    
+      cy.get('[name="city"]').click()
    }
 }
