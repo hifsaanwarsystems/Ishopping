@@ -1,4 +1,5 @@
 /// <reference types="cypress"/>
+
 import {Seller} from './seller.cy'
 const sellerData=require('../fixtures/seller.createaccount.json')
 const storeData=require('../fixtures/seller.storedetails.json')
@@ -8,7 +9,8 @@ const individualDocumentDetails=require('../fixtures/seller.individualDocument.j
 const businessDocumentDetails=require('../fixtures/seller.businessDocument.json')
 const bankDetails=require('../fixtures/seller.bankinfo.json')
 
-describe('Ishopping Tests', () => {
+
+describe('Ishopping Tests Seller Flow', () => {
 
   it('Visit Site', () => {
    
@@ -30,12 +32,12 @@ describe('Ishopping Tests', () => {
     cy.wait(10000)
     seller.pickupDetails(pickupdetails.validContactNumber,pickupdetails.validContactPerson,pickupdetails.validtimings,pickupdetails.validAddress)
     cy.wait(10000)
-    //seller.individualDocument(individualDocumentDetails.validcnic)
+
     seller.businessDocument(businessDocumentDetails.validNTNno)
     seller.bank(bankDetails.benificiaryname,bankDetails.bankname,bankDetails.branchName,bankDetails.accountNo,bankDetails.IBAN)
    })
   
-   it.only('Seller Registration Valid with individual document',function(){
+   it('Seller Registration Valid with individual document',function(){
     let seller=new Seller()
     cy.visit('https://ishopdev.ddways.com/lofmarketplace/seller/login/',{failOnStatusCode:false,auth:{username:"developers",password:"xN9PHjF9cM4DRXN2"}})
     cy.get('a > .is-button').click()
@@ -53,4 +55,6 @@ describe('Ishopping Tests', () => {
     cy.wait(10000)
     seller.bank(bankDetails.benificiaryname,bankDetails.bankname,bankDetails.branchName,bankDetails.accountNo,bankDetails.IBAN)
    })
+  
+   
 })
